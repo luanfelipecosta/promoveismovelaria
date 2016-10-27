@@ -1,38 +1,69 @@
-<footer class="site-footer">
+<!-- Footer -->
+<div class="footer-big">
+    <div class="container">
+        <div class="row">
 
-  <div class="wrapper">
+            <!-- About Us Information -->
+            <div class="col-md-3 col-sm-6">
+                <div class="f-logo">
+                    <h2>Contato<br></h2>
+                </div>
+            </div>
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+            <!-- Recent Posts -->
+            <div class="col-md-3 col-sm-6 f-inner f-inner-black">
+                <div class="col-sm-2">
+                    <i class="fa fa-map-marker fa-lg"></i>
+                </div>
+                <div class="col-sm-10">
+                    <strong>São José dos Campos</strong>
+                    <div class="f-space"></div>
+                    <address>
+                        795 Folsom Ave, Suite 600<br>
+                        <abbr title="Phone">P: </abbr> (12) 3456-7890
+                        contato@promoveis.com.br
+                    </address>
+                </div>
+            </div>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
+        </div>
     </div>
+</div>
 
-  </div>
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Copyright -->
+            <div class="col-sm-6 col-md-6 f-copyright">
+                <span>© Copyright Movelaria - All Rights Reserved</span>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <!-- Social Icons -->
+                <ul class="footer-social footer-social-black">
+                    <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
+                    <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+                    <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-skype fa-stack-1x fa-inverse"></i></span></a></li>
+                    <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-pinterest fa-stack-1x fa-inverse"></i></span></a></li>
+                </ul>
+            </div>
+        </div><!-- /row -->
+    </div><!-- /container -->
+</div>
+<!-- End Footer -->
 
-</footer>
+<!-- jQuery Plugins -->
+<script src="{{ 'public/plugins/jquery-1.11.1.min.js' | prepend: site.baseurl }}"></script>
+<script src="{{ 'public/plugins/plugins/bootstrap/js/bootstrap.min.js' | prepend: site.baseurl }}"></script>
+<script src="{{ 'public/plugins/plugins/revolution/rs-plugin/js/jquery.themepunch.tools.min.js' | prepend: site.baseurl }}"></script>
+<script src="{{ 'public/plugins/plugins/revolution/rs-plugin/js/jquery.themepunch.revolution.min.js' | prepend: site.baseurl }}"></script>
+<script src="{{ 'public/plugins/plugins/cube/jquery.cubeportfolio.min.js' | prepend: site.baseurl }}"></script>
+<script src="{{ 'public/plugins/plugins/owl/owl-carousel/owl.carousel.js' | prepend: site.baseurl }}"></script>
+<script src="{{ 'public/plugins/plugins/moderniz.js' | prepend: site.baseurl }}"></script>
+<script src="{{ 'public/plugins/plugins/jquery.sticky.js' | prepend: site.baseurl }}"></script>
+<script src="{{ 'public/plugins/plugins/jquery.mmenu.min.js' | prepend: site.baseurl }}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script src="{{ 'public/plugins/js/app.js' | prepend: site.baseurl }}"></script>
+</body>
+
+
+</html>
